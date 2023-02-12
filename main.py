@@ -32,6 +32,7 @@ if template_id is None:
   exit(422)
 
 # weather 直接返回对象，在使用的地方用字段进行调用。
+'''
 def get_weather():
   if city is None:
     print('请设置城市')
@@ -42,7 +43,7 @@ def get_weather():
     return None
   weather = res['data']['list'][0]
   return weather
-
+'''
 # 获取当前日期为星期几
 def get_week_day():
   week_list = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
